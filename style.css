@@ -112,3 +112,37 @@ nav ul li a:hover {
 .header-btn:hover {
   background-color: chartreuse;
 }
+
+/* About */
+#about {
+  width: 100%;
+  height: 110vh;
+  background-color: darkslategrey;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5% 0px 5%;
+  position: relative;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: white;
+  margin-left: 15%;
+}
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about-text h2 span {
+  color: aquamarine;
+}
+.about-text h3 {
+  color: aquamarine;
+}
+.about-text p {
+  width: 500px;
+  color: white;
+}
