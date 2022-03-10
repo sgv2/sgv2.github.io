@@ -60,7 +60,7 @@ nav ul li a {
   transition: 0.6s ease;
 }
 
-nav ul li a:hover {
+nav ul li:not(.active) a:hover {
   border-bottom: 2px solid greenyellow;
   box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
