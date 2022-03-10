@@ -243,6 +243,10 @@ nav ul li:not(.active) a:hover {
   justify-content: center;
   flex-direction: column;
 }
+#contact form label {
+  color: white;
+  margin: 10px 0;
+}
 #contact form input,
 #contact form textarea {
   width: 100%;
@@ -253,6 +257,12 @@ nav ul li:not(.active) a:hover {
   color: black;
   border-radius: 5px;
 }
+#contact form input:focus,
+#contact form textarea:focus {
+  color: black;
+  background-color: chartreuse;
+  box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+}
 #contact form textarea {
   height: 150px;
 }
@@ -261,6 +271,10 @@ nav ul li:not(.active) a:hover {
   background-color: chartreuse;
   color: black;
   text-transform: uppercase;
+}
+#contact form input[type="submit"]:focus {
+  background-color: aquamarine;
+  box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
 }
 
 /* Footer */

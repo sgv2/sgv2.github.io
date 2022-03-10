@@ -29,11 +29,11 @@
             <p>I tinker with code, mess with code, and make stuff with code.</p>
             <a class="header-btn" href="#contact">Contact</a>
         </div>
-        <img src="headshot.png">
+        <img src="headshot.png" alt="Photo of Steven Van">
     </section>
 
     <section id="about">
-        <img src="portland.jpg">
+        <img src="portland.jpg" alt="Portland, Oregon downton area">
         <div class="about-text">
             <h2>About <span>Myself</span></h2>
             <h3>Portland State University Student</h3>
@@ -45,7 +45,6 @@
                 PostgresSQL,
                 AWS, and React Native.
             </p>
-            <button class="header-btn">Read More</button>
         </div>
     </section>
 
@@ -57,7 +56,7 @@
 
         <div class="courses-container">
             <div class="courses-box">
-                <img src="web-dev.png">
+                <img src="web-dev.png" alt="Generic image for web development">
                 <div class="courses-text">
                     <h2>Introduction to Web Development</h2>
                     <p>Introductory class that teachers modern techniques frontend web development using Html, CSS, and
@@ -66,7 +65,7 @@
             </div>
 
             <div class="courses-box">
-                <img src="rust.jpg">
+                <img src="rust.jpg" alt="Logo of Rust language">
                 <div class="courses-text">
                     <h2>Programming in Rust</h2>
                     <p>Learning to program in a language that combines solid bare-metal performances with modern
@@ -76,7 +75,7 @@
             </div>
 
             <div class="courses-box">
-                <img src="stats.png">
+                <img src="stats.png" alt="Generic bar graph">
                 <div class="courses-text">
                     <h2>Appl. Stat/Engr and Sci I</h2>
                     <p>Sample spaces, probability, counting measures, discrete and continuous probability models,
@@ -95,35 +94,36 @@
 
         <div class="courses-container">
             <div class="courses-box">
-                <img src="frupal.png">
+                <img src="frupal.png" alt="Game display of Kingdom of Frupal">
                 <div class="courses-text">
                     <h2>Kingdom of Frupal</h2>
                     <p>Text-based roguelike RPG where the player must find the Royal Diamond to win the game</p>
                     <p>(contributions: implemented file import/export, procedural map generation)</p>
                 </div>
-                <a class="header-btn" href="https://github.com/markaveliii/FRUPAL">Read More</a>
+                <a class="header-btn" alt="Git repo for Kingdom of Frupal"
+                    href="https://github.com/markaveliii/FRUPAL">Repo</a>
             </div>
 
             <div class="courses-box">
-                <img src="randmap.png">
+                <img src="randmap.png" alt="Result of randomly generated map on Roblox">
                 <div class="courses-text">
                     <h2>Random Map Generator</h2>
                     <p>A script to generate random layouts of rooms in different orientations. This is written
                         in Lua and is used in a platform called Roblox Studio.
                     </p>
                 </div>
-                <a class="header-btn" href="https://github.com/stevengvan/RandMapGen">Read More</a>
+                <a class="header-btn" alt="Random Map Generator Git repo"
+                    href="https://github.com/stevengvan/RandMapGen">Repo</a>
             </div>
 
             <div class="courses-box">
-                <img src="code.png">
+                <img src="code.png" alt="Part of the source code">
                 <div class="courses-text">
                     <h2>Carnival Vendor Brochure</h2>
                     <p>Brochure management system to automate carnival vendor organization and placement order.</p>
                 </div>
-                <a class="header-btn"
-                    href="https://github.com/stevengvan/carnival-vendor-brochure/blob/master/src/Main.java">Read
-                    More</a>
+                <a class="header-btn" atl="Carnival Vendor Brochure Git repo"
+                    href="https://github.com/stevengvan/carnival-vendor-brochure/blob/master/src/Main.java">Repo</a>
             </div>
         </div>
     </section>
@@ -133,9 +133,12 @@
             <h1>Contact Me</h1>
         </div>
         <form>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message here"></textarea>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter name here..." id="name" />
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter email here..." id="email" />
+            <label for="message">Message</label>
+            <textarea placeholder="Enter message here..." id="message"></textarea>
             <input type="submit" value="Continue" />
         </form>
     </section>
@@ -143,10 +146,10 @@
     <section id="footer">
         <div class="footer-icons">
             <a href="https://github.com/stevengvan">
-                <img src="github.png">
+                <img src="github.png" alt="Github link">
             </a>
             <a href="https://www.linkedin.com/in/steven-v-1a219a107/">
-                <img src="linkedin.png">
+                <img src="linkedin.png" alt="LinkedIn link">
             </a>
         </div>
     </section>
