@@ -15,28 +15,35 @@
     <section id="header">
         <nav>
             <ul class="menu">
-                <li class="header active"><a href="#header">Home</a></li>
-                <li class="about"><a href="#about">About</a></li>
-                <li class="courses"><a href="#courses">Courses</a></li>
-                <li class="projects"><a href="#projects">Projects</a></li>
-                <li class="contact"><a href="#contact">Contact</a></li>
+                <li class="menu-btn active"><a href="#header">Home</a></li>
+                <li class="menu-btn"><a href="#about">About</a></li>
+                <li class="menu-btn"><a href="#courses">Courses</a></li>
+                <li class="menu-btn"><a href="#projects">Projects</a></li>
+                <li class="menu-btn"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-heading">
-            <h4>Hello</h4>
+            <h2>Welcome!</h2>
             <h1>I am <span>Steven</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus.</p>
+            <p>I tinker with code, mess with code, and make stuff with code.</p>
             <a class="header-btn" href="#contact">Contact</a>
         </div>
+        <img src="headshot.png">
     </section>
 
     <section id="about">
+        <img src="portland.jpg">
         <div class="about-text">
-            <h2>Web <span>Dev</span> Student</h2>
-            <h3>PSU Student</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vero tempore ab, ipsam aliquid alias
-                illum laboriosam maxime veniam laborum officia? Numquam, porro deserunt minima omnis saepe commodi odit
-                excepturi!</p>
+            <h2>About <span>Myself</span></h2>
+            <h3>Portland State University Student</h3>
+            <p>As mentioned above, my name is Steven Van. I am a computer science student who has an interest in
+                software engineering.
+                I was formerly interested in graphic designs and illustration but has found computer coding to fit quite
+                well with my
+                interests. For quite some time I have been getting into full stack development with Django, Python,
+                PostgresSQL,
+                AWS, and React Native.
+            </p>
             <button class="header-btn">Read More</button>
         </div>
     </section>
@@ -44,31 +51,36 @@
     <section id="courses">
         <div class="courses-heading">
             <h1>Courses</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus.</p>
+            <p>Classes taken recently</p>
         </div>
 
         <div class="courses-container">
             <div class="courses-box">
+                <img src="web-dev.png">
                 <div class="courses-text">
-                    <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Introduction to Web Development</h2>
+                    <p>Introductory class that teachers modern techniques frontend web development using Html, CSS, and
+                        Javascript</p>
                 </div>
             </div>
 
             <div class="courses-box">
+                <img src="rust.jpg">
                 <div class="courses-text">
-                    <h4>Prog in Rust</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Programming in Rust</h2>
+                    <p>Learning to program in a language that combines solid bare-metal performances with modern
+                        language features that encourages high-quality code.
+                    </p>
                 </div>
             </div>
 
             <div class="courses-box">
+                <img src="stats.png">
                 <div class="courses-text">
-                    <h4>Soft. Engineering</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Appl. Stat/Engr and Sci I</h2>
+                    <p>Sample spaces, probability, counting measures, discrete and continuous probability models,
+                        sampling distributions, and computer applications.
+                    </p>
                 </div>
             </div>
         </div>
@@ -77,32 +89,40 @@
     <section id="projects">
         <div class="courses-heading">
             <h1>Projects</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Available projects on Github</p>
         </div>
 
         <div class="courses-container">
             <div class="courses-box">
+                <img src="frupal.png">
                 <div class="courses-text">
-                    <h4>Kingdom of Frupal</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Kingdom of Frupal</h2>
+                    <p>Text-based roguelike RPG where the player must find the Royal Diamond to win the game</p>
+                    <p>(contributions: implemented file import/export, procedural map generation)</p>
                 </div>
+                <a class="header-btn" href="https://github.com/markaveliii/FRUPAL">Read More</a>
             </div>
 
             <div class="courses-box">
+                <img src="randmap.png">
                 <div class="courses-text">
-                    <h4>Random Map Generator</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Random Map Generator</h2>
+                    <p>A script to generate random layouts of rooms in different orientations. This is written
+                        in Lua and is used in a platform called Roblox Studio.
+                    </p>
                 </div>
+                <a class="header-btn" href="https://github.com/stevengvan/RandMapGen">Read More</a>
             </div>
 
             <div class="courses-box">
+                <img src="code.png">
                 <div class="courses-text">
-                    <h4>Carnival Vendor Brochure</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <a class="header-btn" href="#">Read More</a>
+                    <h2>Carnival Vendor Brochure</h2>
+                    <p>Brochure management system to automate carnival vendor organization and placement order.</p>
                 </div>
+                <a class="header-btn"
+                    href="https://github.com/stevengvan/carnival-vendor-brochure/blob/master/src/Main.java">Read
+                    More</a>
             </div>
         </div>
     </section>
@@ -110,7 +130,6 @@
     <section id="contact">
         <div class="courses-heading">
             <h1>Contact Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
         <form>
             <input type="text" placeholder="Name" />
@@ -118,6 +137,17 @@
             <textarea placeholder="Message here"></textarea>
             <input type="submit" value="Continue" />
         </form>
+    </section>
+
+    <section id="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/stevengvan">
+                <img src="github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/steven-v-1a219a107/">
+                <img src="linkedin.png">
+            </a>
+        </div>
     </section>
 </body>
 
