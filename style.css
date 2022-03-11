@@ -69,44 +69,8 @@ nav ul li:not(.active) a:hover {
   box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
 
-/* Top of page */
-#header {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-#header img {
-  height: 55%;
-  width: auto;
-  position: relative;
-  border-radius: 50%;
-  margin-left: -20%;
-}
-.header-heading {
-  width: 500px;
-  position: relative;
-  color: white;
-}
-.header-heading h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.header-heading h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  margin: 0px;
-}
-.header-heading h1 span {
-  color: greenyellow;
-}
-.header-heading p {
-  color: white;
-}
-.header-btn {
+/* Button */
+.button {
   width: 120px;
   height: 40px;
   display: flex;
@@ -116,183 +80,453 @@ nav ul li:not(.active) a:hover {
   box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
   border-radius: 10px;
   color: black;
-  margin-top: 25px;
   transition: 0.6s ease-in-out;
+  margin-bottom: 20px;
 }
-.header-btn:hover {
+.button:hover {
   background-color: chartreuse;
 }
 
-/* About */
-#about {
-  width: 100%;
-  height: 100vh;
-  background-color: darkslategrey;
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: space-around;
-  padding: 50px 5% 0px 5%;
-  position: relative;
-}
-#about img {
-  width: 40%;
-  height: auto;
-  margin-right: -20%;
-}
-.about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  color: white;
-  margin-left: 15%;
-}
-.about-text h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.about-text h2 span {
-  color: aquamarine;
-}
-.about-text h3 {
-  color: aquamarine;
-}
-.about-text p {
-  width: 500px;
-  color: white;
+@media screen and (min-width: 1024px) {
+  /* Gallery Display */
+  .section-heading {
+    text-align: center;
+    color: white;
+  }
+  .section-heading h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+  .section-heading p {
+    color: white;
+    margin-top: -20px;
+  }
+  .item-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .item-box {
+    background-color: white;
+    width: 80%;
+    height: 700px;
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-box img {
+    height: 40%;
+    width: 100%;
+  }
+  .item-text {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+  }
+  .item-text p {
+    text-align: center;
+  }
+
+  /* Top of page */
+  #header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #header img {
+    height: auto;
+    width: 600px;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  .header-heading {
+    width: 500px;
+    position: relative;
+    color: white;
+    padding: 0 20px;
+    margin-right: 20px;
+  }
+  .header-heading h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .header-heading h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0px;
+  }
+  .header-heading h1 span {
+    color: greenyellow;
+  }
+  .header-heading p {
+    color: white;
+  }
+
+  /* About */
+  #about {
+    width: 100%;
+    height: 100vh;
+    background-color: darkslategrey;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px 0 20px;
+    position: relative;
+  }
+  #about img {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-right: 10%;
+    margin-left: 20px;
+  }
+  .about-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .about-text h2 span {
+    color: aquamarine;
+  }
+  .about-text h3 {
+    color: aquamarine;
+  }
+  .about-text p {
+    width: 500px;
+    color: white;
+  }
+
+  /* courses */
+  #courses {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #courses .item-gallery .item-box img {
+    width: 85%;
+    margin: 10px 20px;
+  }
+
+  /* Projects */
+  #projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkslategray;
+  }
+
+  /* Contact */
+  #contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact form {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact form label {
+    color: white;
+    margin: 10px 0;
+  }
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+  }
+  #contact form input:focus,
+  #contact form textarea:focus {
+    color: black;
+    background-color: chartreuse;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+  }
+  #contact form textarea {
+    height: 150px;
+  }
+  #contact form input[type="submit"] {
+    height: 45px;
+    background-color: chartreuse;
+    color: black;
+    text-transform: uppercase;
+  }
+  #contact form input[type="submit"]:focus {
+    background-color: aquamarine;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+  }
+
+  /* Footer */
+  #footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkslategray;
+    padding: 10px 0;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-icons a img {
+    height: 50px;
+    width: auto;
+  }
 }
 
-/* courses */
-#courses {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.courses-heading {
-  text-align: center;
-  color: white;
-}
-.courses-heading h1 {
-  font-size: 2.5rem;
-  margin-top: 100px;
-}
-.courses-heading p {
-  color: white;
-  margin-bottom: 50px;
-  margin-top: -20px;
-}
-.courses-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.courses-box {
-  background-color: white;
-  width: 370px;
-  height: 100%;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 80px;
-}
-.courses-box img {
-  height: 40%;
-  width: 100%;
-}
-.courses-text {
-  width: 100%;
-  height: 35%;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: -40px;
-}
-.courses-text p {
-  text-align: center;
-}
+@media screen and (max-width: 1023px) {
+  /* Gallery Display */
+  .section-heading {
+    text-align: center;
+    color: white;
+  }
+  .section-heading h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+  .section-heading p {
+    color: white;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+  .item-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .item-box {
+    background-color: white;
+    width: fit-content;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 80px;
+  }
+  .item-box img {
+    height: 150px;
+    width: auto;
+    margin-top: 10px;
+  }
+  .item-text {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .item-text p {
+    text-align: center;
+  }
 
-/* Projects */
-#projects {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: darkslategray;
-}
+  /* Top of page */
+  #header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header img {
+    height: 55%;
+    width: auto;
+    position: relative;
+    border-radius: 50%;
+  }
+  .header-heading {
+    width: 500px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-heading h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .header-heading h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0px;
+  }
+  .header-heading h1 span {
+    color: greenyellow;
+  }
+  .header-heading p {
+    color: white;
+  }
 
-/* Contact */
-#contact {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#contact form {
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#contact form label {
-  color: white;
-  margin: 10px 0;
-}
-#contact form input,
-#contact form textarea {
-  width: 100%;
-  height: 50px;
-  margin: 5px 0px;
-  padding: 10px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-}
-#contact form input:focus,
-#contact form textarea:focus {
-  color: black;
-  background-color: chartreuse;
-  box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
-}
-#contact form textarea {
-  height: 150px;
-}
-#contact form input[type="submit"] {
-  height: 45px;
-  background-color: chartreuse;
-  color: black;
-  text-transform: uppercase;
-}
-#contact form input[type="submit"]:focus {
-  background-color: aquamarine;
-  box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
-}
+  /* About */
+  #about {
+    width: 100%;
+    height: 100vh;
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: relative;
+  }
+  #about img {
+    width: 100%;
+    height: 50%;
+    margin-top: 70px;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    padding: 10px;
+  }
+  .about-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .about-text h2 span {
+    color: aquamarine;
+  }
+  .about-text h3 {
+    color: aquamarine;
+  }
+  .about-text p {
+    width: 100%;
+    color: white;
+  }
 
-/* Footer */
-#footer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: darkslategray;
-  padding: 10px 0;
-}
-.footer-icons {
-  display: flex;
-  flex-direction: row;
-}
-.footer-icons a img {
-  height: 50px;
-  width: auto;
+  /* courses */
+  #courses {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  /* Projects */
+  #projects {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkslategray;
+    padding-bottom: 20px;
+  }
+
+  /* Contact */
+  #contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact form {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #contact form label {
+    color: white;
+    margin: 10px 0;
+  }
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+  }
+  #contact form input:focus,
+  #contact form textarea:focus {
+    color: black;
+    background-color: chartreuse;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+  }
+  #contact form textarea {
+    height: 150px;
+  }
+  #contact form input[type="submit"] {
+    height: 45px;
+    background-color: chartreuse;
+    color: black;
+    text-transform: uppercase;
+  }
+  #contact form input[type="submit"]:focus {
+    background-color: aquamarine;
+    box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
+  }
+
+  /* Footer */
+  #footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkslategray;
+    padding: 10px 0;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-icons a img {
+    height: 50px;
+    width: auto;
+  }
 }
