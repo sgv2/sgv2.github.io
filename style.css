@@ -85,7 +85,7 @@ nav ul li:not(.active) a:hover a:active {
   margin-bottom: 20px;
 }
 .button:hover {
-  background-color: chartreuse;
+  background-color: greenyellow;
 }
 
 @media screen and (min-width: 1024px) {
@@ -269,7 +269,7 @@ nav ul li:not(.active) a:hover a:active {
   #contact form input:focus,
   #contact form textarea:focus {
     color: black;
-    background-color: chartreuse;
+    background-color: greenyellow;
     box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
   }
   #contact form textarea {
@@ -277,7 +277,7 @@ nav ul li:not(.active) a:hover a:active {
   }
   #contact form input[type="submit"] {
     height: 45px;
-    background-color: chartreuse;
+    background-color: greenyellow;
     color: black;
     text-transform: uppercase;
   }
@@ -494,7 +494,7 @@ nav ul li:not(.active) a:hover a:active {
   #contact form input:focus,
   #contact form textarea:focus {
     color: black;
-    background-color: chartreuse;
+    background-color: greenyellow;
     box-shadow: 4px 10px 12px rgba(0, 255, 128, 0.4);
   }
   #contact form textarea {
@@ -502,7 +502,7 @@ nav ul li:not(.active) a:hover a:active {
   }
   #contact form input[type="submit"] {
     height: 45px;
-    background-color: chartreuse;
+    background-color: greenyellow;
     color: black;
     text-transform: uppercase;
   }
