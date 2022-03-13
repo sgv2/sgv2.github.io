@@ -222,7 +222,8 @@ nav ul li:not(.active) a:hover a:active {
     flex-direction: column;
   }
   #courses .item-gallery .item-box img {
-    width: 85%;
+    width: auto;
+    height: 40%;
     margin: 10px 20px;
   }
 
